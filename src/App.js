@@ -3,6 +3,14 @@ import "./App.css";
 import axios from "axios";
 import styled from "styled-components";
 import Characters from "./components/Characters";
+import Header from "./components/Header";
+
+const FlexBox = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 2%;
+`;
 
 const App = () => {
   const [rickAndMortyApi, setRickAndMortyApi] = useState([]);
@@ -19,8 +27,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
-      <Characters apiData={rickAndMortyApi} />
+      <Header />
+      <FlexBox>
+        <Characters apiData={rickAndMortyApi} />
+      </FlexBox>
     </div>
   );
 };
