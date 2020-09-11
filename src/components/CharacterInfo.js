@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 export default function CharacterInfo(props) {
   const { apiData } = props;

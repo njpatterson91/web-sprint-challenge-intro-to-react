@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import CharacterInfo from "./CharacterInfo";
 
 export default function Character(props) {
